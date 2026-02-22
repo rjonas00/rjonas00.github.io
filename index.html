@@ -1,1 +1,167 @@
-<h1>Hello</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raffael Jonas | Astrophysics & Cosmology</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #2c3e50; /* Deep blue-grey */
+            --accent: #3498db;  /* Science blue */
+            --text: #333;
+            --bg: #ffffff;
+            --sidebar-bg: #f8f9fa;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.7;
+            color: var(--text);
+            margin: 0;
+            display: flex;
+            background: var(--bg);
+        }
+
+        /* Sidebar styling */
+        aside {
+            width: 280px;
+            background: var(--sidebar-bg);
+            border-right: 1px solid #eee;
+            padding: 40px 30px;
+            display: flex;
+            flex-direction: column;
+            position: fixed;
+            height: 100vh;
+        }
+
+        .profile-pic {
+            width: 140px;
+            height: 140px;
+            background: #e0e0e0;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            object-fit: cover;
+            border: 3px solid white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        h1 { font-size: 1.4rem; margin: 10px 0; color: var(--primary); }
+        .tagline { font-size: 0.85rem; color: #666; margin-bottom: 30px; line-height: 1.4; }
+
+        nav a {
+            display: block;
+            text-decoration: none;
+            color: var(--text);
+            font-weight: 500;
+            margin: 8px 0;
+            padding: 10px 15px;
+            border-radius: 8px;
+            transition: all 0.2s;
+        }
+
+        nav a:hover { background: #fff; color: var(--accent); transform: translateX(5px); }
+
+        /* Main content area */
+        main {
+            flex: 1;
+            margin-left: 340px; /* Accounts for sidebar width */
+            padding: 60px 50px;
+            max-width: 800px;
+        }
+
+        section { margin-bottom: 50px; }
+        h2 { 
+            font-size: 1.6rem; 
+            border-bottom: 2px solid #f0f0f0; 
+            padding-bottom: 10px; 
+            margin-bottom: 25px;
+            color: var(--primary);
+        }
+
+        .highlight { color: var(--accent); font-weight: 600; }
+
+        /* Card styles for Projects/Talks */
+        .card {
+            border: 1px solid #eee;
+            background: #fff;
+            padding: 20px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            transition: box-shadow 0.3s;
+        }
+
+        .card:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.05); }
+        .card h3 { margin: 0 0 8px 0; font-size: 1.1rem; color: var(--primary); }
+        .card-meta { font-size: 0.85rem; color: #999; margin-bottom: 10px; display: block; }
+
+        /* Responsive design for mobile */
+        @media (max-width: 850px) {
+            body { flex-direction: column; }
+            aside { width: 100%; height: auto; position: relative; border-right: none; border-bottom: 1px solid #eee; padding: 30px; }
+            main { margin-left: 0; padding: 30px; }
+            .profile-pic { width: 100px; height: 100px; }
+        }
+    </style>
+</head>
+<body>
+
+<aside>
+    <img src="profile.jpg" alt="Raffael Jonas" class="profile-pic" onerror="this.src='https://ui-avatars.com/api/?name=Raffael+Jonas&background=random'">
+    <h1>Raffael Jonas</h1>
+    <p class="tagline">MSc Student, Astrophysics<br>University of Vienna<br>Data Science & Cosmology Group</p>
+    
+    <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Work & Projects</a>
+        <a href="#presentations">Presentations</a>
+        <a href="#cv">Curriculum Vitae</a>
+    </nav>
+</aside>
+
+<main>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am a Master’s student in Astrophysics at the <strong>University of Vienna</strong>. As a member of the <span class="highlight">Data Science & Cosmology Group</span> under Prof. Oliver Hahn, I contribute to frontier research in structure growth and the complex connection between dark matter and baryonic structures.</p>
+        
+        <p>My research focuses on the <strong>statistical analysis of density fields</strong>, utilizing power spectra, correlation functions, and higher-order statistics (bispectra and trispectra) to gain a deeper understanding of cosmic evolution.</p>
+
+        <p>I am especially interested in the <strong>Dark Ages and Reionization</strong>, using neutral media as a tracer for structure formation. Furthermore, I apply <strong>wavelet analysis</strong> to time-dependent signals to find new ways of interpreting data through statistical intuition and visualization.</p>
+    </section>
+
+    <section id="projects">
+        <h2>Work & Projects</h2>
+        <div class="card">
+            <span class="card-meta">Research Area</span>
+            <h3>Statistical Analysis of Density Fields</h3>
+            <p>Utilizing higher-order statistics (bi and tri-spectra) to analyze the connection between dark matter and baryonic structures.</p>
+        </div>
+        <div class="card">
+            <span class="card-meta">Data Science</span>
+            <h3>Signal Processing & Wavelets</h3>
+            <p>Analysis of time-dependent signals of emission and absorption during the era of reionization.</p>
+        </div>
+    </section>
+
+    <section id="presentations">
+        <h2>Presentations</h2>
+        <div class="card">
+            <span class="card-meta">Seminar · 2024</span>
+            <h3>Active Research Participation</h3>
+            <p>Contributing to front-tier research discussions within the Data Science & Cosmology Group.</p>
+        </div>
+    </section>
+
+    <section id="cv">
+        <h2>Curriculum Vitae</h2>
+        <p>For more details on my academic background and technical skills, you can download my CV below:</p>
+        <a href="CV.pdf" target="_blank" style="text-decoration: none;">
+            <div class="card" style="border-color: var(--accent); color: var(--accent); text-align: center; font-weight: 600;">
+                View CV (PDF)
+            </div>
+        </a>
+    </section>
+</main>
+
+</body>
+</html>
