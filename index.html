@@ -164,24 +164,68 @@
     </section>
 
     <section id="cv" class="content-section">
-        <h2>Curriculum Vitae</h2>
-        <p>View my CV below or 
-           <a href="RJ_CV.pdf" target="_blank" style="color:var(--accent); font-weight: bold;">
-              download the PDF
-           </a>.
-        </p>
-        
-        <div class="cv-container" style="background: #1e293b; border: 1px solid #334155;">
-            <iframe src="RJ_CV.pdf#toolbar=0&navpanes=0&scrollbar=0" 
-                    width="100%" 
-                    height="100%" 
-                    style="border: none;">
-                <p>Your browser does not support iframes. 
-                   <a href="RJ_CV.pdf">Click here to view the PDF.</a>
-                </p>
-            </iframe>
+    <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #334155; margin-bottom: 25px; padding-bottom: 10px;">
+        <h2 style="border: none; margin: 0;">Curriculum Vitae</h2>
+        <a href="RJ_CV.pdf" target="_blank" class="btn" style="background: transparent; border: 1px solid var(--accent); color: var(--accent); padding: 5px 15px; font-size: 0.8rem;">
+            <i class="fa-solid fa-file-pdf"></i> Download PDF
+        </a>
+    </div>
+
+    <div class="cv-category">
+        <h3 style="color: var(--accent); text-transform: uppercase; font-size: 0.9rem; letter-spacing: 1px;">Education</h3>
+        <div class="card">
+            <span style="float: right; color: var(--text-muted); font-size: 0.85rem;">2025 — 2027</span>
+            <strong>Master in Astronomy</strong>
+            <div style="font-size: 0.9rem; color: var(--text-muted);">University of Vienna</div>
         </div>
-    </section>
+        <div class="card">
+            <span style="float: right; color: var(--text-muted); font-size: 0.85rem;">2022 — 2025</span>
+            <strong>Bachelor in Astronomy</strong>
+            <div style="font-size: 0.9rem; color: var(--text-muted);">University of Vienna | GPA: 1.74</div>
+        </div>
+        <div class="card">
+            <span style="float: right; color: var(--text-muted); font-size: 0.85rem;">2015 — 2020</span>
+            <strong>HTL for Computer Science and Engineering</strong>
+            <div style="font-size: 0.9rem; color: var(--text-muted);">Spengergasse Vienna</div>
+        </div>
+    </div>
+
+    <div class="cv-category" style="margin-top: 40px;">
+        <h3 style="color: var(--accent); text-transform: uppercase; font-size: 0.9rem; letter-spacing: 1px;">Research Experience</h3>
+        <div class="card">
+            <span style="float: right; color: var(--text-muted); font-size: 0.85rem;">2025 — 2026</span>
+            <strong>Investigating Galaxy Bias (Paid Research Project)</strong>
+            <p style="font-size: 0.9rem; margin-top: 5px;">Performing large-scale particle data analysis on TNG300 simulations (TBs) using the Vienna Scientific Cluster (VSC). Focused on spatial clustering and galaxy bias.</p>
+        </div>
+        <div class="card">
+            <span style="float: right; color: var(--text-muted); font-size: 0.85rem;">2025</span>
+            <strong>Bachelor's Thesis: Excursion Set Theory Halo Mass Function</strong>
+            <p style="font-size: 0.9rem; margin-top: 5px;">Constructed halo mass functions using various smoothing filters (Sharp-k, Top-hat, Gaussian, Smooth-k) and compared results to analytical models like Colossus.</p>
+        </div>
+    </div>
+
+    <div class="cv-category" style="margin-top: 40px;">
+        <h3 style="color: var(--accent); text-transform: uppercase; font-size: 0.9rem; letter-spacing: 1px;">Technical Skills</h3>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px;">
+            <div class="card" style="margin-bottom: 0;">
+                <strong style="font-size: 0.85rem; color: var(--accent);">Programming</strong>
+                <ul style="font-size: 0.85rem; padding-left: 15px; margin: 5px 0;">
+                    <li>Python (Astropy, healpy, CAMB)</li>
+                    <li>C++ & Java (Advanced)</li>
+                    <li>SQL/MySQL & Bash</li>
+                </ul>
+            </div>
+            <div class="card" style="margin-bottom: 0;">
+                <strong style="font-size: 0.85rem; color: var(--accent);">Data & HPC</strong>
+                <ul style="font-size: 0.85rem; padding-left: 15px; margin: 5px 0;">
+                    <li>HDF5 & FITS Data Handling</li>
+                    <li>VSC & Slurm Automation</li>
+                    <li>Machine Learning (Keras, RF)</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
 </main>
 
 <script>
