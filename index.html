@@ -3,15 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Raffael Jonas | Astrophysics & Cosmology</title>
+    <title>Raffael Jonas | Astrophysics</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <style>
         :root {
-            --primary: #2c3e50; /* Deep blue-grey */
-            --accent: #3498db;  /* Science blue */
-            --text: #333;
-            --bg: #ffffff;
-            --sidebar-bg: #f8f9fa;
+            --bg: #0f172a;       /* Dark Navy */
+            --sidebar-bg: #1e293b; 
+            --text: #f1f5f9;
+            --text-muted: #94a3b8;
+            --accent: #38bdf8;   /* Light Blue star-like accent */
+            --card-bg: #1e293b;
         }
 
         body {
@@ -23,11 +25,10 @@
             background: var(--bg);
         }
 
-        /* Sidebar styling */
+        /* Sidebar */
         aside {
             width: 280px;
             background: var(--sidebar-bg);
-            border-right: 1px solid #eee;
             padding: 40px 30px;
             display: flex;
             flex-direction: column;
@@ -36,18 +37,22 @@
         }
 
         .profile-pic {
-            width: 140px;
-            height: 140px;
-            background: #e0e0e0;
+            width: 120px;
+            height: 120px;
+            background: #334155;
             border-radius: 50%;
             margin-bottom: 20px;
             object-fit: cover;
-            border: 3px solid white;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            border: 2px solid var(--accent);
         }
 
-        h1 { font-size: 1.4rem; margin: 10px 0; color: var(--primary); }
-        .tagline { font-size: 0.85rem; color: #666; margin-bottom: 30px; line-height: 1.4; }
+        h1 { font-size: 1.4rem; margin: 10px 0; color: var(--accent); }
+        .tagline { font-size: 0.85rem; color: var(--text-muted); margin-bottom: 20px; }
+
+        /* Icons */
+        .social-links { margin-bottom: 30px; display: flex; gap: 15px; }
+        .social-links a { color: var(--text-muted); font-size: 1.2rem; transition: 0.2s; }
+        .social-links a:hover { color: var(--accent); }
 
         nav a {
             display: block;
@@ -57,109 +62,84 @@
             margin: 8px 0;
             padding: 10px 15px;
             border-radius: 8px;
-            transition: all 0.2s;
+            transition: 0.2s;
         }
 
-        nav a:hover { background: #fff; color: var(--accent); transform: translateX(5px); }
+        nav a:hover { background: #334155; color: var(--accent); }
 
-        /* Main content area */
+        /* Main Content */
         main {
             flex: 1;
-            margin-left: 340px; /* Accounts for sidebar width */
+            margin-left: 340px;
             padding: 60px 50px;
             max-width: 800px;
         }
 
-        section { margin-bottom: 50px; }
-        h2 { 
-            font-size: 1.6rem; 
-            border-bottom: 2px solid #f0f0f0; 
-            padding-bottom: 10px; 
-            margin-bottom: 25px;
-            color: var(--primary);
-        }
+        section { margin-bottom: 60px; }
+        h2 { font-size: 1.6rem; border-bottom: 1px solid #334155; padding-bottom: 10px; margin-bottom: 25px; }
 
-        .highlight { color: var(--accent); font-weight: 600; }
-
-        /* Card styles for Projects/Talks */
         .card {
-            border: 1px solid #eee;
-            background: #fff;
-            padding: 20px;
-            margin-bottom: 15px;
-            border-radius: 8px;
-            transition: box-shadow 0.3s;
+            background: var(--card-bg);
+            padding: 25px;
+            margin-bottom: 20px;
+            border-radius: 12px;
+            border: 1px solid #334155;
+            transition: transform 0.2s;
         }
 
-        .card:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.05); }
-        .card h3 { margin: 0 0 8px 0; font-size: 1.1rem; color: var(--primary); }
-        .card-meta { font-size: 0.85rem; color: #999; margin-bottom: 10px; display: block; }
+        .card:hover { transform: translateY(-3px); border-color: var(--accent); }
+        .btn {
+            display: inline-block;
+            background: var(--accent);
+            color: #0f172a;
+            padding: 10px 20px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            margin-top: 10px;
+        }
 
-        /* Responsive design for mobile */
         @media (max-width: 850px) {
             body { flex-direction: column; }
-            aside { width: 100%; height: auto; position: relative; border-right: none; border-bottom: 1px solid #eee; padding: 30px; }
+            aside { width: 100%; height: auto; position: relative; padding: 30px; }
             main { margin-left: 0; padding: 30px; }
-            .profile-pic { width: 100px; height: 100px; }
         }
     </style>
 </head>
 <body>
 
 <aside>
-    <img src="profile.jpg" alt="Raffael Jonas" class="profile-pic" onerror="this.src='https://ui-avatars.com/api/?name=Raffael+Jonas&background=random'">
+    <img src="profile.jpg" alt="RJ" class="profile-pic" onerror="this.src='https://ui-avatars.com/api/?name=Raffael+Jonas&background=0ea5e9&color=fff'">
     <h1>Raffael Jonas</h1>
-    <p class="tagline">MSc Student, Astrophysics<br>University of Vienna<br>Data Science & Cosmology Group</p>
+    <p class="tagline">MSc Student, Astrophysics<br>University of Vienna</p>
     
+    <div class="social-links">
+        <a href="https://github.com/rjonas00" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <a href="https://linkedin.com/in/YOUR-PROFILE" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="mailto:raffael.jonas@univie.ac.at"><i class="fa-solid fa-envelope"></i></a>
+    </div>
+
     <nav>
         <a href="#about">About</a>
         <a href="#projects">Work & Projects</a>
-        <a href="#presentations">Presentations</a>
-        <a href="#cv">Curriculum Vitae</a>
+        <a href="presentations.html">Presentations</a>
+        <a href="cv.html">Curriculum Vitae</a>
     </nav>
 </aside>
 
 <main>
     <section id="about">
         <h2>About Me</h2>
-        <p>I am a Master’s student in Astrophysics at the <strong>University of Vienna</strong>. As a member of the <span class="highlight">Data Science & Cosmology Group</span> under Prof. Oliver Hahn, I contribute to frontier research in structure growth and the complex connection between dark matter and baryonic structures.</p>
-        
-        <p>My research focuses on the <strong>statistical analysis of density fields</strong>, utilizing power spectra, correlation functions, and higher-order statistics (bispectra and trispectra) to gain a deeper understanding of cosmic evolution.</p>
-
-        <p>I am especially interested in the <strong>Dark Ages and Reionization</strong>, using neutral media as a tracer for structure formation. Furthermore, I apply <strong>wavelet analysis</strong> to time-dependent signals to find new ways of interpreting data through statistical intuition and visualization.</p>
+        <p>I am a Master’s student in Astrophysics at the <strong>University of Vienna</strong>, part of the <strong>Data Science & Cosmology Group</strong> of Prof. Hahn.</p>
+        <p>I am especially interested in structure growth and the statistical analysis of density fields (power spectra, bispectra, and trispectra). My goal is to use statistical intuition and visualization to understand the connection between dark matter and baryonic structures.</p>
     </section>
 
     <section id="projects">
         <h2>Work & Projects</h2>
         <div class="card">
-            <span class="card-meta">Research Area</span>
-            <h3>Statistical Analysis of Density Fields</h3>
-            <p>Utilizing higher-order statistics (bi and tri-spectra) to analyze the connection between dark matter and baryonic structures.</p>
+            <h3>Density Field Analysis</h3>
+            <p>Developing tools for higher-order statistics to understand non-linear structure growth.</p>
         </div>
-        <div class="card">
-            <span class="card-meta">Data Science</span>
-            <h3>Signal Processing & Wavelets</h3>
-            <p>Analysis of time-dependent signals of emission and absorption during the era of reionization.</p>
-        </div>
-    </section>
-
-    <section id="presentations">
-        <h2>Presentations</h2>
-        <div class="card">
-            <span class="card-meta">Seminar · 2024</span>
-            <h3>Active Research Participation</h3>
-            <p>Contributing to front-tier research discussions within the Data Science & Cosmology Group.</p>
-        </div>
-    </section>
-
-    <section id="cv">
-        <h2>Curriculum Vitae</h2>
-        <p>For more details on my academic background and technical skills, you can download my CV below:</p>
-        <a href="CV.pdf" target="_blank" style="text-decoration: none;">
-            <div class="card" style="border-color: var(--accent); color: var(--accent); text-align: center; font-weight: 600;">
-                View CV (PDF)
-            </div>
-        </a>
     </section>
 </main>
 
