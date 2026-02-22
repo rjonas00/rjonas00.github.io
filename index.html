@@ -163,10 +163,10 @@
         </div>
     </section>
 
-    <section id="cv" class="content-section">
+<section id="cv" class="content-section">
     <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #334155; margin-bottom: 25px; padding-bottom: 10px;">
         <h2 style="border: none; margin: 0;">Curriculum Vitae</h2>
-        <a href="RJ_CV.pdf" target="_blank" class="btn" style="background: transparent; border: 1px solid var(--accent); color: var(--accent); padding: 5px 15px; font-size: 0.8rem;">
+        <a href="RJ_CV.pdf" target="_blank" class="btn" style="background: transparent; border: 1px solid var(--accent); color: var(--accent); padding: 5px 15px; font-size: 0.8rem; text-decoration: none; border-radius: 4px;">
             <i class="fa-solid fa-file-pdf"></i> Download PDF
         </a>
     </div>
@@ -176,51 +176,84 @@
         <div class="card">
             <span style="float: right; color: var(--text-muted); font-size: 0.85rem;">2025 — 2027</span>
             <strong>Master in Astronomy</strong>
-            <div style="font-size: 0.9rem; color: var(--text-muted);">University of Vienna</div>
+            <div style="font-size: 0.9rem; color: var(--text-muted);">University of Vienna [cite: 5]</div>
         </div>
         <div class="card">
             <span style="float: right; color: var(--text-muted); font-size: 0.85rem;">2022 — 2025</span>
             <strong>Bachelor in Astronomy</strong>
-            <div style="font-size: 0.9rem; color: var(--text-muted);">University of Vienna | GPA: 1.74</div>
+            <div style="font-size: 0.9rem; color: var(--text-muted);">University of Vienna | GPA: 1.74 [cite: 6, 8]</div>
         </div>
         <div class="card">
             <span style="float: right; color: var(--text-muted); font-size: 0.85rem;">2015 — 2020</span>
-            <strong>HTL for Computer Science and Engineering</strong>
-            <div style="font-size: 0.9rem; color: var(--text-muted);">Spengergasse Vienna</div>
+            <strong>HTL Spengergasse</strong>
+            <div style="font-size: 0.9rem; color: var(--text-muted);">Computer Science and Engineering [cite: 9]</div>
         </div>
     </div>
 
     <div class="cv-category" style="margin-top: 40px;">
-        <h3 style="color: var(--accent); text-transform: uppercase; font-size: 0.9rem; letter-spacing: 1px;">Research Experience</h3>
+        <h3 style="color: var(--accent); text-transform: uppercase; font-size: 0.9rem; letter-spacing: 1px;">Scientific Research</h3>
         <div class="card">
-            <span style="float: right; color: var(--text-muted); font-size: 0.85rem;">2025 — 2026</span>
-            <strong>Investigating Galaxy Bias (Paid Research Project)</strong>
-            <p style="font-size: 0.9rem; margin-top: 5px;">Performing large-scale particle data analysis on TNG300 simulations (TBs) using the Vienna Scientific Cluster (VSC). Focused on spatial clustering and galaxy bias.</p>
+            <span style="float: right; color: var(--text-muted); font-size: 0.85rem;">2025 — 2026 [cite: 18]</span>
+            <strong>Investigating Galaxy Bias (TNG300 Simulation) [cite: 16]</strong>
+            <div style="font-size: 0.85rem; color: var(--accent); margin-bottom: 5px;">Lead: Prof. Oliver Hahn | Data Science & Cosmology Group [cite: 17]</div>
+            <ul style="font-size: 0.85rem; padding-left: 15px; margin: 0;">
+                <li>Large-scale particle data analysis (TBs) on the VSC[cite: 19].</li>
+                <li>Analyzing spatial clustering, galaxy bias, and secondary properties[cite: 21].</li>
+                <li>Identifying bound particles across different snapshots[cite: 20].</li>
+            </ul>
         </div>
         <div class="card">
-            <span style="float: right; color: var(--text-muted); font-size: 0.85rem;">2025</span>
-            <strong>Bachelor's Thesis: Excursion Set Theory Halo Mass Function</strong>
-            <p style="font-size: 0.9rem; margin-top: 5px;">Constructed halo mass functions using various smoothing filters (Sharp-k, Top-hat, Gaussian, Smooth-k) and compared results to analytical models like Colossus.</p>
+            <span style="float: right; color: var(--text-muted); font-size: 0.85rem;">2025 [cite: 13]</span>
+            <strong>Bachelor's Thesis: Excursion Set Theory [cite: 11]</strong>
+            <div style="font-size: 0.85rem; color: var(--accent); margin-bottom: 5px;">Supervisor: MSc Agata Wisłocka [cite: 12]</div>
+            <ul style="font-size: 0.85rem; padding-left: 15px; margin: 0;">
+                <li>Constructed halo mass functions using Sharp-k, Top-hat, Gaussian, and Smooth-k filters[cite: 14].</li>
+                <li>Reconstructed "Excursion sets with a perfect collapse model" methodology[cite: 15].</li>
+            </ul>
         </div>
     </div>
 
     <div class="cv-category" style="margin-top: 40px;">
-        <h3 style="color: var(--accent); text-transform: uppercase; font-size: 0.9rem; letter-spacing: 1px;">Technical Skills</h3>
-        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px;">
+        <h3 style="color: var(--accent); text-transform: uppercase; font-size: 0.9rem; letter-spacing: 1px;">Technical Expertise</h3>
+        
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
             <div class="card" style="margin-bottom: 0;">
-                <strong style="font-size: 0.85rem; color: var(--accent);">Programming</strong>
-                <ul style="font-size: 0.85rem; padding-left: 15px; margin: 5px 0;">
-                    <li>Python (Astropy, healpy, CAMB)</li>
-                    <li>C++ & Java (Advanced)</li>
-                    <li>SQL/MySQL & Bash</li>
+                <strong style="display: block; border-bottom: 1px solid #334155; padding-bottom: 5px; margin-bottom: 10px; color: var(--accent);">Languages [cite: 41]</strong>
+                <ul style="font-size: 0.85rem; padding-left: 15px; margin: 0; line-height: 1.6;">
+                    <li><strong>Python:</strong> Advanced (Astropy, healpy, CAMB) [cite: 44]</li>
+                    <li><strong>C++ & Java:</strong> Advanced [cite: 43, 45]</li>
+                    <li><strong>SQL / MySQL:</strong> Advanced [cite: 48]</li>
+                    <li><strong>Bash:</strong> Advanced [cite: 51]</li>
+                    <li><strong>Fortran & C#:</strong> Basics [cite: 46, 47]</li>
+                    <li><strong>NoSQL:</strong> Basics [cite: 49]</li>
                 </ul>
             </div>
+
             <div class="card" style="margin-bottom: 0;">
-                <strong style="font-size: 0.85rem; color: var(--accent);">Data & HPC</strong>
-                <ul style="font-size: 0.85rem; padding-left: 15px; margin: 5px 0;">
-                    <li>HDF5 & FITS Data Handling</li>
-                    <li>VSC & Slurm Automation</li>
-                    <li>Machine Learning (Keras, RF)</li>
+                <strong style="display: block; border-bottom: 1px solid #334155; padding-bottom: 5px; margin-bottom: 10px; color: var(--accent);">HPC & Data Handling [cite: 50]</strong>
+                <ul style="font-size: 0.85rem; padding-left: 15px; margin: 0; line-height: 1.6;">
+                    <li><strong>Large-scale Data:</strong> TB-worth analysis [cite: 44]</li>
+                    <li><strong>Formats:</strong> HDF5, FITS [cite: 54]</li>
+                    <li><strong>Tools:</strong> Git (Advanced), Slurm (Basics) [cite: 52, 53]</li>
+                    <li><strong>Environment:</strong> Vienna Scientific Cluster (VSC) [cite: 19]</li>
+                </ul>
+            </div>
+
+            <div class="card" style="margin-bottom: 0;">
+                <strong style="display: block; border-bottom: 1px solid #334155; padding-bottom: 5px; margin-bottom: 10px; color: var(--accent);">Data Science & ML [cite: 57]</strong>
+                <ul style="font-size: 0.85rem; padding-left: 15px; margin: 0; line-height: 1.6;">
+                    <li>Markov Chain Methods [cite: 58]</li>
+                    <li>Stochastic Modeling [cite: 58]</li>
+                    <li>Keras & Random Forest [cite: 59, 60]</li>
+                    <li>Gaussian Processes [cite: 61]</li>
+                </ul>
+            </div>
+
+            <div class="card" style="margin-bottom: 0;">
+                <strong style="display: block; border-bottom: 1px solid #334155; padding-bottom: 5px; margin-bottom: 10px; color: var(--accent);">Languages [cite: 62]</strong>
+                <ul style="font-size: 0.85rem; padding-left: 15px; margin: 0; line-height: 1.6;">
+                    <li><strong>German:</strong> Native (C2) [cite: 63]</li>
+                    <li><strong>English:</strong> Professional (C1) [cite: 64]</li>
                 </ul>
             </div>
         </div>
