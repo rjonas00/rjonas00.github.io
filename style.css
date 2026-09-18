@@ -129,7 +129,7 @@ section p:last-child {
 
 .timeline li {
   display: grid;
-  grid-template-columns: 8.5rem 1fr;
+  grid-template-columns: 11rem 1fr;
   gap: 0.2rem 1rem;
   margin-bottom: 1.1rem;
 }
@@ -143,6 +143,11 @@ section p:last-child {
   font-size: 0.85rem;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
   padding-top: 0.15rem;
+  white-space: nowrap;
+}
+
+.timeline .when .expected {
+  color: var(--accent);
 }
 
 .timeline .what {
@@ -157,9 +162,20 @@ section p:last-child {
 
 .timeline .who {
   grid-column: 2;
+  color: var(--text);
+  font-size: 0.92rem;
+  margin-top: 0.2rem;
+}
+
+.timeline .who-label {
+  display: inline-block;
   color: var(--muted);
-  font-size: 0.85rem;
-  font-style: italic;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-right: 0.55em;
 }
 
 .current-projects {
@@ -190,11 +206,15 @@ section p:last-child {
 
 .current-projects .status {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-  font-size: 0.72rem;
-  letter-spacing: 0.06em;
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
   text-transform: uppercase;
-  color: var(--muted);
+  color: var(--accent);
+  background: color-mix(in srgb, var(--accent) 14%, transparent);
   white-space: nowrap;
+  padding: 0.28rem 0.6rem;
+  border-radius: 999px;
 }
 
 .current-projects p {
@@ -241,7 +261,8 @@ footer a {
   .timeline li {
     grid-template-columns: 1fr;
   }
-  .timeline .where {
+  .timeline .where,
+  .timeline .who {
     grid-column: 1;
   }
 }
