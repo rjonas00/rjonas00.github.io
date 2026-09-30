@@ -166,6 +166,9 @@
           based only on the initial density field. Using around 100 N-body simulations, the
           model learned to handle the natural imbalance between common, low-mass halos and rare,
           massive ones, and its predictions performed comparably to other published approaches.
+          Most misclassifications are off by only one mass class, and the model is least
+          confident at halo boundaries, where a small shift in position can change which halo,
+          or whether any halo, a particle belongs to.
         </p>
         <figure class="figure">
           <img src="images/cnn-structure-formation.webp" alt="Three panels for the same simulation slice: the true halo mass classes, the CNN's predicted halo mass classes, and a confidence map, each voxel colored by its assigned mass class or prediction confidence.">
