@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Raffael Jonas</title>
 <meta name="description" content="Raffael Jonas, MSc student in Astronomy at the University of Vienna. Cosmological simulations, galaxy–halo connection, assembly bias.">
-<link rel="stylesheet" href="style.css?v=11">
+<link rel="stylesheet" href="style.css?v=12">
 </head>
 <body>
 
@@ -172,14 +172,10 @@
           <div class="figure-labels">
             <span>Ground truth</span>
             <span>Prediction</span>
-            <span class="confidence-label">
-              Confidence
-              <span class="confidence-bar"></span>
-              <span class="confidence-ticks"><span>1/12</span><span>1</span></span>
-            </span>
+            <span>Confidence</span>
           </div>
-          <div class="class-legend">
-            <div class="class-swatches">
+          <div class="figure-scales">
+            <div class="class-legend">
               <span style="background:#1f77b4"></span>
               <span style="background:#aec7e8"></span>
               <span style="background:#ffbb78"></span>
@@ -193,12 +189,16 @@
               <span style="background:#17becf"></span>
               <span style="background:#9edae5"></span>
             </div>
+            <div class="confidence-bar"></div>
+          </div>
+          <div class="figure-scale-ticks">
             <div class="class-ticks"><span>0 &middot; background</span><span>11 &middot; most massive</span></div>
+            <div class="confidence-ticks"><span>1/12</span><span>1</span></div>
           </div>
           <figcaption>
-            Same simulation slice: true halo mass classes, the model&rsquo;s predicted classes,
-            and its confidence, from 1/12 (no preferred class) to 1 (fully confident). Ground
-            truth and prediction are colored by halo mass class, 0&ndash;11.
+            Same simulation slice: true halo mass classes and the model&rsquo;s predicted
+            classes, both colored by halo mass class (0&ndash;11), and the model&rsquo;s
+            confidence, from 1/12 (no preferred class) to 1 (fully confident).
           </figcaption>
         </figure>
       </li>
