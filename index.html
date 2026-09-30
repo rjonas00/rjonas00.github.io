@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Raffael Jonas</title>
 <meta name="description" content="Raffael Jonas, MSc student in Astronomy at the University of Vienna. Cosmological simulations, galaxy–halo connection, assembly bias.">
-<link rel="stylesheet" href="style.css?v=8">
+<link rel="stylesheet" href="style.css?v=9">
 </head>
 <body>
 
@@ -156,8 +156,30 @@
   </section>
 
   <section>
-    <h2>Talks</h2>
+    <h2>Projects &amp; Talks</h2>
     <ul class="projects">
+      <li>
+        <span class="project-title">Predicting Halo Mass with a 3D CNN</span>
+        <p>
+          A course project (Data Science Focus Project) that grew well beyond its intended
+          scope. As lead, I trained a 3D U-Net convolutional neural network to predict
+          voxel-level halo mass classes directly from the initial density field of N-body
+          simulations, then used the predictions to reconstruct the halo mass function and
+          benchmarked it against the literature.
+        </p>
+        <figure class="figure">
+          <img src="images/cnn-structure-formation.webp" alt="Three panels showing the initial density field, the ground-truth halo mass classes, and the CNN's predicted halo mass classes for the same simulation slice, each voxel colored by its assigned mass class.">
+          <div class="figure-labels">
+            <span>Input density</span>
+            <span>Ground truth</span>
+            <span>Prediction</span>
+          </div>
+          <figcaption>
+            Same simulation slice: initial density field, true halo mass classes, and the
+            model&rsquo;s predicted classes, each voxel colored by mass class.
+          </figcaption>
+        </figure>
+      </li>
       <li>
         <a href="https://github.com/rjonas00/Presentations">Slides from talks and presentations</a>
         <p>Coursework and research presentations, collected on GitHub.</p>
