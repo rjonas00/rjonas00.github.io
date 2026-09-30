@@ -161,10 +161,13 @@
       <li>
         <span class="project-title">Predicting Halo Mass with a 3D CNN</span>
         <p>
-          Trained a 3D U-Net convolutional neural network to make field-level predictions, per
-          voxel, of collapse and final halo mass class directly from the initial density field
-          of around 100 N-body simulations. The predictions were used to reconstruct the halo
-          mass function and benchmarked against literature models.
+          Designed and trained a 3D U-Net to make field-level predictions, per voxel, of
+          collapse and final halo mass class from the initial conditions of around 100 N-body
+          simulations run with DISCO-DJ and labeled using the ROCKSTAR halo finder. An Earth
+          Mover&rsquo;s Distance loss handled the strong imbalance between rare, massive halos
+          and common low-mass ones; the resulting classification accuracy and reconstructed halo
+          mass function were comparable to published benchmarks (L&oacute;pez-Cano et&nbsp;al.
+          2024; Buisman et&nbsp;al. 2025).
         </p>
         <figure class="figure">
           <img src="images/cnn-structure-formation.webp" alt="Three panels showing the initial density field, the ground-truth halo mass classes, and the CNN's predicted halo mass classes for the same simulation slice, each voxel colored by its assigned mass class.">
