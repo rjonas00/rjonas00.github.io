@@ -283,6 +283,14 @@ section p:last-child {
   text-align: center;
 }
 
+.figure-labels > span > i {
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  margin-left: 0.3rem;
+}
+
 .figure-scales {
   display: flex;
   gap: 0.6rem;
