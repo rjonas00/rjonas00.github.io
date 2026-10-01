@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Raffael Jonas</title>
 <meta name="description" content="Raffael Jonas, MSc student in Astronomy at the University of Vienna. Cosmological simulations, galaxy–halo connection, assembly bias.">
-<link rel="stylesheet" href="style.css?v=14">
+<link rel="stylesheet" href="style.css?v=15">
 </head>
 <body>
 
@@ -228,14 +228,23 @@
             <span>Halos</span>
           </div>
           <div class="dot-legend">
-            <span><i style="background:#ff0000"></i>True: void</span>
-            <span><i style="background:#ffd700"></i>True: pancake</span>
-            <span><i style="background:#008000"></i>True: filament</span>
+            <div class="dot-row">
+              <span class="dot-row-label">Predicted</span>
+              <span><i style="background:#ffa500"></i>Pancake</span>
+              <span><i style="background:#0000ff"></i>Filament</span>
+              <span><i style="background:#00ffff"></i>Halo</span>
+            </div>
+            <div class="dot-row">
+              <span class="dot-row-label">True</span>
+              <span><i style="background:#ff0000"></i>Void</span>
+              <span><i style="background:#ffd700"></i>Pancake</span>
+              <span><i style="background:#008000"></i>Filament</span>
+            </div>
           </div>
           <figcaption>
-            Shaded regions show the excursion-set-predicted pancake, filament, and halo contours
-            for the same simulation slice; colored markers show the true structure type of
-            particles that didn&rsquo;t actually collapse that far.
+            Shaded regions show the excursion-set-predicted structure contour for each panel;
+            colored markers show the true structure type of particles that didn&rsquo;t
+            actually collapse that far.
           </figcaption>
         </figure>
       </li>
