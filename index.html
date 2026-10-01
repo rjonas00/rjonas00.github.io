@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Raffael Jonas</title>
 <meta name="description" content="Raffael Jonas, MSc student in Astronomy at the University of Vienna. Cosmological simulations, galaxy–halo connection, assembly bias.">
-<link rel="stylesheet" href="style.css?v=13">
+<link rel="stylesheet" href="style.css?v=14">
 </head>
 <body>
 
@@ -205,25 +205,35 @@
         </figure>
       </li>
       <li>
-        <span class="project-title">Classifying Cosmic Structure with Excursion Set Theory</span>
+        <span class="project-title">Testing the Locality Assumption of Excursion Set Theory</span>
         <p>
-          My Bachelor&rsquo;s thesis used excursion set theory, a framework that predicts how
-          regions of the early universe collapse into cosmic structure, to classify particles as
-          voids, pancakes, filaments, or halos directly from the initial density field. Comparing
-          these predictions against full N-body simulations shows where the classification
-          struggles: most misclassified particles sit right at the boundary between structure
-          types, exactly where theory and simulation would be expected to disagree.
+          My Bachelor&rsquo;s thesis had two parts: comparing predicted halo mass functions
+          across different smoothing filters against analytical and simulated literature models,
+          and testing a core assumption of excursion set theory against 16 N-body simulations at
+          progressively finer scales, following Agata Wis&#322;ocka&rsquo;s approach. That
+          assumption is locality: that a particle&rsquo;s final structure, void, pancake,
+          filament, or halo, is fully determined by progressively adding finer-scale information
+          to its largest-scale collapse. Comparing this prediction against an actual N-body
+          simulation shows where that assumption breaks down: misclassified particles cluster
+          right at the edges of structures, exactly where additional, non-local information
+          would matter most.
         </p>
         <figure class="figure">
-          <img src="images/excursion-set-structure.webp" alt="Three Lagrangian slices of the same simulation showing particles predicted as pancakes, filaments, and halos, with colored markers indicating the true structure type of misclassified particles.">
+          <img src="images/excursion-set-structure.webp" alt="Three Lagrangian slices of the same simulation showing the excursion-set-predicted pancake, filament, and halo regions, with colored markers indicating the true structure type of particles that did not actually collapse that far.">
           <div class="figure-labels">
             <span>Pancakes</span>
             <span>Filaments</span>
             <span>Halos</span>
           </div>
+          <div class="dot-legend">
+            <span><i style="background:#ff0000"></i>True: void</span>
+            <span><i style="background:#ffd700"></i>True: pancake</span>
+            <span><i style="background:#008000"></i>True: filament</span>
+          </div>
           <figcaption>
-            Particles predicted as pancakes, filaments, and halos from the same simulation
-            slice; colored markers show the true structure type of misclassified particles.
+            Shaded regions show the excursion-set-predicted pancake, filament, and halo contours
+            for the same simulation slice; colored markers show the true structure type of
+            particles that didn&rsquo;t actually collapse that far.
           </figcaption>
         </figure>
       </li>
