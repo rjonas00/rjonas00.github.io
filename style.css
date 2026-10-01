@@ -106,21 +106,6 @@ section p:last-child {
   margin-bottom: 0;
 }
 
-.interests {
-  color: var(--muted);
-  font-size: 0.95rem;
-}
-
-.interests .label {
-  display: block;
-  color: var(--muted);
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-  font-size: 0.72rem;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  margin-bottom: 0.4rem;
-}
-
 .timeline, .projects {
   list-style: none;
   margin: 0;
