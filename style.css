@@ -346,21 +346,36 @@ section p:last-child {
 
 .dot-legend {
   display: flex;
-  justify-content: center;
-  gap: 1.3rem;
+  flex-direction: column;
+  gap: 0.4rem;
   margin-top: 0.6rem;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
   font-size: 0.72rem;
   color: var(--muted);
 }
 
-.dot-legend span {
+.dot-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.dot-row-label {
+  min-width: 4.5rem;
+  text-align: right;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-size: 0.64rem;
+}
+
+.dot-row span {
   display: flex;
   align-items: center;
   gap: 0.35rem;
 }
 
-.dot-legend i {
+.dot-row i {
   display: inline-block;
   width: 8px;
   height: 8px;
