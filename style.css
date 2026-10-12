@@ -2,6 +2,7 @@
   --bg: #fbfaf8;
   --text: #1c1c1a;
   --muted: #6b6b64;
+  --faint: #a3a29a;
   --accent: #2f4858;
   --rule: #e4e2dc;
 }
@@ -11,6 +12,7 @@
     --bg: #161614;
     --text: #eae8e3;
     --muted: #9a988f;
+    --faint: #6a685f;
     --accent: #9fc1d1;
     --rule: #2c2c28;
   }
@@ -212,23 +214,42 @@ section p:last-child {
   font-weight: 600;
 }
 
-.current-projects .status {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-  font-size: 0.68rem;
-  font-weight: 600;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  color: var(--accent);
-  background: color-mix(in srgb, var(--accent) 14%, transparent);
-  white-space: nowrap;
-  padding: 0.28rem 0.6rem;
-  border-radius: 999px;
-}
-
 .current-projects p {
   margin: 0.35rem 0 0;
   color: var(--muted);
   font-size: 0.95rem;
+}
+
+.publications {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.publications li {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  margin-bottom: 1.1rem;
+}
+
+.publications li:last-child {
+  margin-bottom: 0;
+}
+
+.pub-title {
+  font-weight: 600;
+}
+
+.pub-authors {
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+.pub-status {
+  color: var(--muted);
+  font-size: 0.85rem;
+  font-style: italic;
 }
 
 .projects li {
@@ -275,7 +296,7 @@ section p:last-child {
   font-weight: 600;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--muted);
+  color: var(--faint);
 }
 
 .figure-labels > span {
@@ -322,7 +343,7 @@ section p:last-child {
   margin-top: 0.3rem;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
   font-size: 0.66rem;
-  color: var(--muted);
+  color: var(--faint);
 }
 
 .class-ticks {
@@ -359,7 +380,7 @@ section p:last-child {
   margin-top: 0.6rem;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
   font-size: 0.72rem;
-  color: var(--muted);
+  color: var(--faint);
 }
 
 .dot-row {
