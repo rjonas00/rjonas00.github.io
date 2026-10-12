@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Raffael Jonas</title>
 <meta name="description" content="Raffael Jonas, MSc student in Astronomy at the University of Vienna. Cosmological simulations, galaxy–halo connection, assembly bias.">
-<link rel="stylesheet" href="style.css?v=17">
+<link rel="stylesheet" href="style.css?v=19">
 </head>
 <body>
 
@@ -66,13 +66,12 @@
           <span class="what">Galaxy bias in the TNG300 simulation</span>
         </div>
         <p>
-          Measuring how galaxies trace the underlying matter distribution in TNG300, as a
-          function of the initial density field and its curvature, and comparing linear,
-          quadratic, and Gaussian bias models against galaxies selected by stellar mass, star
-          formation, and survey-like criteria. The Gaussian model holds up better at small
-          scales, while the quadratic model breaks down for the most strongly biased objects, a
-          result I&rsquo;m using to test the peak-background split framework across these
-          selections.
+          Measuring the Lagrangian density and Laplacian bias of halos and galaxies directly
+          from the hydrodynamic simulation, and comparing quadratic and Gaussian bias expansion
+          models for tracers selected by physical properties and by observationally motivated
+          criteria. Using the Wasserstein distance, the Gaussian model&rsquo;s accuracy stays
+          roughly constant as the smoothing scale decreases, while the quadratic model degrades
+          sharply.
         </p>
       </li>
       <li>
@@ -80,11 +79,12 @@
           <span class="what">High-resolution constrained N-body simulations</span>
         </div>
         <p>
-          Running a high-resolution N-body simulation, targeting over 200 billion particles in a
-          2 Gpc/h box, from a constrained initial density field that enables full merger-tree
-          reconstruction down to the halo masses relevant for DESI&rsquo;s Bright Galaxy Survey.
-          I&rsquo;m building its lightcone and validating the simulation&rsquo;s halo mass
-          function and power spectrum against theoretical predictions.
+          Running high-resolution N-body simulations (L-Gadget3, target resolution
+          6100<sup>3</sup> particles in a 2 Gpc/h box) from an initial density field constrained
+          by the positions of DESI BGS galaxies. The simulation and lightcone construction are
+          validated (halo mass function, power spectrum) with the BACCO framework, and the
+          simulations are used to evaluate the constraining power by comparing the spatial
+          distribution of these galaxies in the simulation with their observed positions.
         </p>
       </li>
     </ul>
@@ -124,26 +124,6 @@
   </section>
 
   <section>
-    <h2>Teaching</h2>
-    <ul class="timeline">
-      <li>
-        <span class="when">2026 &ndash; present</span>
-        <div class="detail">
-          <span class="what">Tutor, Department of Astrophysics</span>
-          <span class="where">University of Vienna</span>
-          <span class="who"><span class="who-label">BSc courses:</span> Cosmology; Hydrodynamics and Plasma Physics</span>
-        </div>
-      </li>
-      <li>
-        <span class="when">2019 &ndash; present</span>
-        <div class="detail">
-          <span class="what">Private Tutoring, Mathematics</span>
-        </div>
-      </li>
-    </ul>
-  </section>
-
-  <section>
     <h2>Education</h2>
     <ul class="timeline">
       <li>
@@ -172,6 +152,26 @@
               realizations.
             </p>
           </div>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Teaching</h2>
+    <ul class="timeline">
+      <li>
+        <span class="when">2026 &ndash; present</span>
+        <div class="detail">
+          <span class="what">Tutor, Department of Astrophysics</span>
+          <span class="where">University of Vienna</span>
+          <span class="who"><span class="who-label">BSc courses:</span> Cosmology; Hydrodynamics and Plasma Physics</span>
+        </div>
+      </li>
+      <li>
+        <span class="when">2019 &ndash; present</span>
+        <div class="detail">
+          <span class="what">Private Tutoring, Mathematics</span>
         </div>
       </li>
     </ul>
