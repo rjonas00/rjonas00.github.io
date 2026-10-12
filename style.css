@@ -182,12 +182,6 @@ section p:last-child {
   color: var(--text);
 }
 
-.timeline .thesis-desc {
-  margin: 0.2rem 0 0;
-  color: var(--muted);
-  font-size: 0.95rem;
-}
-
 .current-projects {
   list-style: none;
   margin: 0 0 1.6rem;
