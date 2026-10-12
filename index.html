@@ -73,6 +73,15 @@
           roughly constant as the smoothing scale decreases, while the quadratic model degrades
           sharply.
         </p>
+        <figure class="figure">
+          <img src="images/lagrangian-bias-overview.webp" alt="Top row: the smoothed density field with galaxy positions, the matter and galaxy density distributions, and the measured bias function of the density. Bottom row: the Laplacian field, the joint distributions of density and Laplacian for matter and galaxies, and the measured two-dimensional bias function.">
+          <figcaption>
+            Top: univariate model, with the density field and galaxy positions (dots), the matter
+            and galaxy density distributions, and the measured bias function f(&delta;). Bottom:
+            multivariate model, adding the Laplacian field, the joint distributions of density
+            and Laplacian, and the measured bias function f(&delta;, L).
+          </figcaption>
+        </figure>
       </li>
       <li>
         <div class="row">
@@ -86,6 +95,19 @@
           simulations are used to evaluate the constraining power by comparing the spatial
           distribution of these galaxies in the simulation with their observed positions.
         </p>
+        <figure class="figure">
+          <img src="images/constrained-sim-slice.webp" alt="A slice through a lower-resolution test run of the constrained simulation, showing DESI BGS galaxies in black inside the two survey footprints and simulated halos in red filling the whole box.">
+          <div class="dot-legend">
+            <div class="dot-row">
+              <span><i style="background:#000;box-shadow:0 0 0 1px var(--faint)"></i>DESI BGS</span>
+              <span><i style="background:#dc143c"></i>Simulation halos</span>
+            </div>
+          </div>
+          <figcaption>
+            Slice through a lower-resolution test run, showing DESI BGS galaxies and simulated
+            halos in the same volume.
+          </figcaption>
+        </figure>
       </li>
     </ul>
   </section>
